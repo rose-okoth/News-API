@@ -1,4 +1,4 @@
-#!/home/oem/python-apps/news-app/virtual/bin/python
+#!/home/oem/python-apps/News/virtual/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
