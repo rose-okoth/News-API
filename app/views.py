@@ -10,9 +10,9 @@ def index():
 
     message = 'Latest News'
     return render_template('index.html',message =  message)
-    
 
-@app.route('/')
+
+@app.route('/news')
 def news():
     '''
     View news page function that returns the news details page and its data
