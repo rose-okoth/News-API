@@ -10,3 +10,14 @@ class News:
         self.url=url
         self.publishedAt=publishedAt
         self.urlToImage=urlToImage
+
+class Sources:
+    '''
+    Source class to define the news article sources
+    '''
+    def __init__(self,name,description,url,category,country):
+        self.name=name
+        self.description=description
+        self.url=url
+        self.category=category
+        self.country=country

@@ -1,14 +1,14 @@
 from app import app
 import urllib.request,json
 from .models import news
-from config import news_api_base_url,api_key
+from instance.config import news_api_base_url,api_key
 from flask import render_template 
 News = news.News
 
-#api key
+# #api key
 # api_key = app.config['api_key']
 
-#news base url
+# #news base url
 # base_url = app.config['news_api_base_url']
 
 

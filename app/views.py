@@ -1,8 +1,9 @@
 from flask import render_template 
 from app import app
 from .request import get_news, process_results
-from config import news_api_base_url,api_key,sources_base_url
+from instance.config import news_api_base_url,api_key,sources_base_url
 import urllib.request,json
+
 #views 
 @app.route('/')
 def index():
@@ -15,6 +16,7 @@ def index():
             news_results_list = get_news_response['articles']
             news_results = process_results(news_results_list)
     return news_results
+    
 def process_results(news_list):
     #Function that processes the news results
     source = []
