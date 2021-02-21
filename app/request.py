@@ -54,7 +54,7 @@ def process_results(news_list):
         url.append(news_item.get('url'))
         publishedAt.append(news_item.get('publishedAt'))
         urlToImage.append(news_item.get('urlToImage'))
-        anything.append('eeeeeeeeeeeeeeeeeee')
+        anything.append('')
 
     news_results=zip(source,author,title,description,url,publishedAt,urlToImage,anything)
     return news_results

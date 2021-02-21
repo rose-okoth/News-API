@@ -1,47 +1,8 @@
-<!-- {% import 'macros.html' as macro%}
-
-<!DOCTYPE html>
-<html lang="en">
-
-    <head>
-        <meta charset="UTF-8">
-        {% if title %}
-        <title>{{ title }}</title>
-        {% else %}
-        <title> Welcome to the home of the Latest News </title>
-        {% endif %}
-    </head>
-    <body>
-        <h2> All News</h2>
-            <ul>
-                {{ macro.displayNewsList(everything)}}
-            </ul>
-    </body>
-</html> -->
-
-<!-- {% import 'macros.html' as macro%}
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        {% if title %}
-        <title>{{ title }}</title>
-        {% else %}
-        <title> Welcome to the home of the Latest News </title>
-        {% endif %}
-    </head>
-    <body>
-        <h2> All News</h2>
-            <ul>
-                {{ macro.displayNewsList(everything)}}
-            </ul>
-    </body>
-</html> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>NEW Center</title>
+    <title>Latest News Updates</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@300;400&display=swap" rel="stylesheet">
@@ -49,22 +10,22 @@
 <body style="font-family: 'Newsreader', serif;">
 <div class="jumbotron jumbotron-fluid p-5 text-center " style="color:black" style="text-align: center">
     <h1 class="mb-3" style="color:black" style="text-align: center">
-        Latest News Center
+        Latest News
     </h1>
 </div>
-<div class="container-fluid">
+<div class="container-fluid" height=400 width=400>
       <div class="row row-cols-3 row-cols-md-3 g-4">
         {% for source,author,title,description,url,publishedAt,urlToImage, i in content %}
         <div class="col-3">
           <div class="card-group">
             <img height="200" src="{{urlToImage}}" class="card-img-top" alt="Image not found"/>
             <div class="card-body">
-                <h4 class="card-title">{{source}}</h4>
-              <h5 class="card-title"> {{title}}</h5>
-              <p class="card-text"> {{description}}</p>
+                <h4 class="card-title">{{ source}}</h4>
+              <h5 class="card-title"> {{ title }}</h5>
+              <p class="card-text"> {{ description }}</p>
               <ul class="list-group list-group-flush">
-                <li class="list-group-item">Author: {{author}}</li>
-                <li class="list-group-item">Date: {{publishedAt}}</li>
+                <li class="list-group-item">Written By: {{ author }}</li>
+                <li class="list-group-item">Date: {{ publishedAt }}</li>
               </ul>
               <a href="{{url}}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Read More</a>
             </div>
