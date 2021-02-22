@@ -1,11 +1,12 @@
-from flask import render_template 
-from app import app
-from .request import get_news, process_results
+from flask import render_template,request
+from . import main
+from ..request import get_news, process_results
 from instance.config import news_api_base_url,api_key,sources_base_url
 import urllib.request,json
+# from ..models import Review
 
 #views 
-@app.route('/')
+@main.route('/')
 def index():
     get_news_url = news_api_base_url.format(api_key)
     with urllib.request.urlopen(get_news_url) as url:
