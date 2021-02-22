@@ -2,8 +2,9 @@ class Config:
     '''
     General configuration parent class
     '''
-    # news_api_base_url ='https://newsapi.org/v2/?q=bitcoin&apiKey=8c39155e2f654098827b9fc8512d091b'
-    # api_key ='8c39155e2f654098827b9fc8512d091b'
+
+    api_key = 'api_key',
+    news_api_base_url = 'news_api_base_url'
 
 class ProdConfig(Config):
     '''

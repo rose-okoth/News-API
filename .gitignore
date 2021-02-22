@@ -126,4 +126,4 @@ dmypy.jso
 
 virtual/
 *.pyc
-# instance/
+instance/

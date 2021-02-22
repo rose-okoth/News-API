@@ -1,7 +1,7 @@
 from flask import render_template,request
 from . import main
 from ..request import get_news, process_results
-from instance.config import news_api_base_url,api_key,sources_base_url
+from config import news_api_base_url,api_key,sources_base_url
 import urllib.request,json
 # from ..models import Review
 

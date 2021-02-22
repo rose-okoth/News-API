@@ -2,7 +2,7 @@
 import urllib.request,json
 from .models import News
 # from .models import news
-from instance.config import news_api_base_url,api_key
+from config import news_api_base_url,api_key
 from flask import render_template 
 
 # News = news.News
@@ -15,8 +15,8 @@ from flask import render_template
 
 # def configure_request(app):
 #     global api_key,base_url
-#     news_api_base_url = app.config['https://newsapi.org/v2/top-headlines?q=all&apiKey=8c39155e2f654098827b9fc8512d091b']  
-#     api_key = app.config['8c39155e2f654098827b9fc8512d091b'] 
+#     news_api_base_url = app.config['news_api_base_url']  
+#     api_key = app.config['api_key'] 
 
 
 def get_news(everything):
