@@ -29,7 +29,7 @@ def process_results(news_list):
     anything = []
     news_results = []
 
-    # image_repo = [https://media.istockphoto.com/photos/nairobi-cityscape-capital-city-of-kenya-picture-id637912692?k=6&m=637912692&s=612x612&w=0&h=dmUFmQbZfY6HpoZOiGUtMOv6W0COMp_ykIKxZdWhX0g=,https://www.gettyimages.com/gi-resources/images/500px/983794168.jpg,https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg,]
+    # image_repo = ['https://media.istockphoto.com/photos/nairobi-cityscape-capital-city-of-kenya-picture-id637912692?k=6&m=637912692&s=612x612&w=0&h=dmUFmQbZfY6HpoZOiGUtMOv6W0COMp_ykIKxZdWhX0g=','https://www.gettyimages.com/gi-resources/images/500px/983794168.jpg','https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg',]
     
     for news_item in news_list:
         name = news_item.get('source')
@@ -40,13 +40,13 @@ def process_results(news_list):
         url.append(news_item.get('url'))
         publishedAt.append(news_item.get('publishedAt'))
         urlToImage.append(news_item.get('urlToImage'))
-        anything.append('dsds')
+        anything.append('')
 
-        # image = articles['urlToImage']
+        # image = news_item['urlToImage']
         # if not image == None:
-        #     img.append(image)
+        #     image.append(image)
         # else:
-        #     img.append(random.choice(image_repo))
+        #     image.append(random.choice(image_repo))
 
     news_results=zip(source,author,title,description,url,publishedAt,urlToImage,anything)
     return render_template("index.html", content = news_results)

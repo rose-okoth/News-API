@@ -6,9 +6,39 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"> -->
 </head>
 <body style="font-family: 'Newsreader', serif;">
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="https://toppng.com/uploads/preview/newspapers-11552767965rxu3fdkzzr.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      SmartNews
+    </a>
+    <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://www.aljazeera.com">Al-Jazeera</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://abcnews.go.com">ABC News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://www.bbc.co.uk/news">BBC News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://www.businessinsider.com">Business Insider</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href= "http://us.cnn.com">CNN</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://www.foxsports.com">Fox Sports</a>
+        </li>
+      </ul>
+  </nav>
+
 <div class="jumbotron jumbotron-fluid p-5 text-center " style="color:black" style="text-align: center">
     <h1 class="mb-3" style="color:black" style="text-align: center">
         Latest News
@@ -28,12 +58,12 @@
                 <li class="list-group-item">Written By: {{ author }}</li>
                 <li class="list-group-item">Date: {{ publishedAt }}</li>
               </ul>
-              <a href="{{url}}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Read More</a>
+              <a href="{{url}}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Read More...</a>
             </div>
           </div>
         </div>
-    {% endfor %}
-       </div>
+        {% endfor %}
+      </div>
 </div>
 </body>
 </html>
