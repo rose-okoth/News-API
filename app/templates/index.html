@@ -25,10 +25,10 @@
     </h1>
 </div>
 
-<div class="container-fluid" height=400 width=400>
+<div class="container-fluid">
       <div class="row row-cols-3 row-cols-md-3 g-4">
         {% for source,author,title,description,url,publishedAt,urlToImage, i in content %}
-        <div class="col-3">
+        <div class="col-3" height="400">
           <div class="card-group">
             <img height="200" src="{{urlToImage}}" class="card-img-top" alt="Image not found"/>
             <div class="card-body">
