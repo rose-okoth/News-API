@@ -6,10 +6,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
 </head>
+
 <body style="font-family: 'Newsreader', serif;">
-  <nav class="navbar fixed-top navbar-light bg-light">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="#" style= "font-family: 'Permanent Marker', cursive;">
+      <nav class="navbar fixed-top navbar-dark grey bg-dark grey" >
       <img src="https://toppng.com/uploads/preview/newspapers-11552767965rxu3fdkzzr.png" width="30" height="30" class="d-inline-block align-top" alt="">
       SmartNews
     </a>
@@ -20,6 +24,7 @@
       Headlines of the Day
     </h1>
 </div>
+
 <div class="container-fluid" height=400 width=400>
       <div class="row row-cols-3 row-cols-md-3 g-4">
         {% for source,author,title,description,url,publishedAt,urlToImage, i in content %}
@@ -34,7 +39,7 @@
                 <li class="list-group-item">Written By: {{ author }}</li>
                 <li class="list-group-item">Date: {{ publishedAt }}</li>
               </ul>
-              <a href="{{url}}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Read More...</a>
+              <a href="{{url}}" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Read More...</a>
             </div>
           </div>
         </div>
@@ -42,23 +47,16 @@
       </div>
 </div>
 <!-- Footer -->
-<footer class="bg-light text-center text-lg-start">
-  <!-- Grid container -->
+<footer class="text-light bg-light text-center text-lg-start bg-dark grey">
   <div class="container p-4">
-
-    
-    <!--Grid row-->
     <div class="row">
-      <!--Grid column-->
       <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
         <h5 class="text-uppercase">SmartNews</h5>
         <p>
           A simple news app that helps you keep up with the latest news from all around the globe, from trusted sources.
         </p>
       </div>
-      <!--Grid column-->
 
-      <!--Grid column-->
       <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
         <h5 class="text-uppercase">Our Sources</h5>
 
@@ -83,9 +81,7 @@
           </li>
         </ul>
       </div>
-      <!--Grid column-->
 
-      <!--Grid column-->
       <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
         <h5 class="text-uppercase mb-0">Our Sources</h5>
 
@@ -110,9 +106,7 @@
           </li>
         </ul>
       </div>
-      <!--Grid column-->
 
-      <!--Grid column-->
       <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
         <h5 class="text-uppercase mb-0">Our Sources</h5>
 
@@ -138,16 +132,12 @@
           </li>
         </ul>
       </div>
-      <!--Grid column-->
     </div>
-    <!--Grid row-->
   </div>
-  <!-- Grid container -->
 
-  <!-- Copyright -->
   <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    © 2021 Copyright:
-    <a class="text-dark" href="https://mdbootstrap.com/">SmartNews.com</a>
+      © 2021 Copyright:
+    <a class="text-light" href="https://mdbootstrap.com/">smartnews.com</a>
   </div>
 </footer>
 </body>
