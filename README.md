@@ -21,10 +21,10 @@ Rose Okoth.
 # Setup Instructions
 
 1. Clone the repo:
-    `git clone https://github.com/rose-okoth/News-API`
+   * `git clone https://github.com/rose-okoth/News-API`
 ​
 1. Switch into the directory:
-    `cd News-API`
+   * `cd News-API`
 ​
 # Running the application
 
