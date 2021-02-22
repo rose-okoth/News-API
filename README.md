@@ -52,13 +52,13 @@ Rose Okoth.
     * `Insert the API Key you received from News Api where <Your-Api-Key> is.`
 
 1. To run the application, in your terminal:
-    *  $ chmod +x start.sh
-    *  $ ./start.sh
+    *  `$ chmod +x start.sh`
+    *  `$ ./start.sh`
 
 # Testing the Application
 
 1. To run the tests for the class files:
-    * $ python3 manage.py tests
+    * `$ python3 manage.py tests`
     
 # Technologies Used
 
