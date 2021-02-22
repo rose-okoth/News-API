@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@300;400&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"> -->
 </head>
 <body style="font-family: 'Newsreader', serif;">
   <nav class="navbar navbar-light bg-light">
@@ -14,34 +13,11 @@
       <img src="https://toppng.com/uploads/preview/newspapers-11552767965rxu3fdkzzr.png" width="30" height="30" class="d-inline-block align-top" alt="">
       SmartNews
     </a>
-    <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="http://www.aljazeera.com">Al-Jazeera</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="http://abcnews.go.com">ABC News</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="http://www.bbc.co.uk/news">BBC News</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="http://www.businessinsider.com">Business Insider</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href= "http://us.cnn.com">CNN</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="http://www.foxsports.com">Fox Sports</a>
-        </li>
-      </ul>
   </nav>
 
 <div class="jumbotron jumbotron-fluid p-5 text-center " style="color:black" style="text-align: center">
     <h1 class="mb-3" style="color:black" style="text-align: center">
-        Latest News
+      Headlines of the Day
     </h1>
 </div>
 <div class="container-fluid" height=400 width=400>
@@ -65,5 +41,93 @@
         {% endfor %}
       </div>
 </div>
+<!-- Footer -->
+<footer class="bg-light text-center text-lg-start">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase">SmartNews</h5>
+        <p>
+          A simple news app that helps you keep up with the latest news from all around the globe, from trusted sources.
+        </p>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Our Sources</h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a class="nav-link" href="http://www.aljazeera.com">Al-Jazeera</a>
+          </li>
+          <li>
+            <a class="nav-link" href="http://abcnews.go.com">ABC News</a>
+          </li>
+          <li>
+            <a class="nav-link" href="http://www.bbc.co.uk/news">BBC News</a>
+          </li>
+          <li>
+            <a class="nav-link" href="http://www.businessinsider.com">Business Insider</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-0">Our Sources</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a class="nav-link" href= "http://us.cnn.com">CNN</a>
+          </li>
+          <li>
+            <a class="nav-link" href="http://www.foxsports.com">Fox Sports</a>
+          </li>
+          <li>
+            <a class="nav-link" href="http://www.msnbc.com">MSNBC</a>          
+          </li>
+          <li>
+            <a class="nav-link" href="http://mashable.com">Mashable</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-0">Our Sources</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a class="nav-link" href= "http://www.buzzfeed.com">BuzzFeed</a>
+          </li>
+          <li>
+            <a class="nav-link" href="http://www.engadget.com">Engadget</a>
+          </li>
+          <li>
+            <a class="nav-link" href="http://www.ign.com">IGN</a>          
+          </li>
+          <li>
+            <a class="nav-link" href="http://www.news24.com">News24</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2021 Copyright:
+    <a class="text-dark" href="https://mdbootstrap.com/">SmartNews.com</a>
+  </div>
+</footer>
 </body>
 </html>
